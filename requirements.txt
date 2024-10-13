@@ -1,0 +1,4 @@
+ffmpeg-python==0.2.0
+future==1.0.0
+mutagen==1.47.0
+pillow==10.4.0
