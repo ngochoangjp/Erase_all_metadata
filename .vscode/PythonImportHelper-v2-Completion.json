@@ -1,0 +1,842 @@
+[
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "winreg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winreg",
+        "description": "winreg",
+        "detail": "winreg",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "TAGS",
+        "importPath": "PIL.ExifTags",
+        "description": "PIL.ExifTags",
+        "isExtraImport": true,
+        "detail": "PIL.ExifTags",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "mutagen",
+        "description": "mutagen",
+        "isExtraImport": true,
+        "detail": "mutagen",
+        "documentation": {}
+    },
+    {
+        "label": "ffmpeg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ffmpeg",
+        "description": "ffmpeg",
+        "detail": "ffmpeg",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass\n        tee_f.write(what)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info.major,\n        sys.version_info.minor,\n        suffix,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(f\"-> {root_key_name}\\\\{key_name}[{value_name}]={value!r}\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(f\"-> DELETE {root_key_name}\\\\{key_name}[{value_name}]\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n        like file_created to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(f\"Failed to unregister COM objects: {why}\")\n    try:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location):\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError(f'Path \"{location}\" does not exist!')\n    return location\ndef main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python pywin32_postinstall.py -install",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python pywin32_postinstall.py -install\n    If you installed pywin32 via a .exe installer, this should be run\n    automatically after installation, but if it fails you can run it again.\n    If you installed pywin32 via PIP, you almost certainly need to run this to\n    setup the environment correctly.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(os.path.join(tempfile.gettempdir(), \"pywin32_postinstall.log\"), \"w\")\nclass Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to PythonXX\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to PythonXX\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created  # type: ignore[used-before-def]\n    # 3.10 stopped supporting bdist_wininst, but we can still build them with 3.9.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to PythonXX\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created  # type: ignore[used-before-def]\n    # 3.10 stopped supporting bdist_wininst, but we can still build them with 3.9.\n    # This can be kept until Python 3.9 or exe installers support is dropped.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(f\"*** Test script '{script}' exited with {result.returncode}\")\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [this_dir] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "this_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "this_dir = os.path.dirname(__file__)\nsite_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_type",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def get_file_type(file_path):\n    _, ext = os.path.splitext(file_path.lower())\n    if ext in ['.jpg', '.jpeg', '.png', '.gif']:\n        return 'image'\n    elif ext in ['.mp3', '.wav', '.flac']:\n        return 'audio'\n    elif ext in ['.mp4', '.avi', '.mov']:\n        return 'video'\n    else:\n        return 'unknown'",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "delete_image_metadata",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def delete_image_metadata(file_path, categories=None):\n    with Image.open(file_path) as img:\n        # Remove all EXIF data\n        data = img.getexif()\n        if categories:\n            for category in categories:\n                if category in data:\n                    del data[category]\n        else:\n            data.clear()",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "delete_audio_metadata",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def delete_audio_metadata(file_path, categories=None):\n    audio = MutagenFile(file_path)\n    if categories:\n        for category in categories:\n            if category in audio:\n                del audio[category]\n    else:\n        audio.clear()\n    audio.save()\ndef delete_video_metadata(file_path):",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "delete_video_metadata",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def delete_video_metadata(file_path):\n    output_file = file_path + \".temp\"\n    stream = ffmpeg.input(file_path)\n    stream = ffmpeg.output(stream, output_file, map_metadata=-1)\n    ffmpeg.run(stream, overwrite_output=True)\n    os.replace(output_file, file_path)\ndef add_basic_metadata(file_path, file_type):\n    if file_type == 'image':\n        with Image.open(file_path) as img:\n            width, height = img.size",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "add_basic_metadata",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def add_basic_metadata(file_path, file_type):\n    if file_type == 'image':\n        with Image.open(file_path) as img:\n            width, height = img.size\n            return f\"Size: {width}x{height}, Type: {img.format}\"\n    elif file_type == 'audio':\n        audio = MutagenFile(file_path)\n        return f\"Format: {audio.info.pprint()}\"\n    elif file_type == 'video':\n        probe = ffmpeg.probe(file_path)",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "add_artist_metadata",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def add_artist_metadata(file_path, file_type, artist):\n    if file_type == 'image':\n        with Image.open(file_path) as img:\n            exif = img.getexif()\n            artist_tag = next((tag for tag, name in TAGS.items() if name == 'Artist'), None)\n            if artist_tag:\n                exif[artist_tag] = artist\n                img.save(file_path, exif=exif)\n            else:\n                print(\"Warning: Couldn't add artist metadata to image.\")",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "delallmeta",
+        "description": "delallmeta",
+        "peekOfCode": "def main():\n    while True:\n        path = input(\"Enter the path to the folder/file (or 'q' to quit): \")\n        if path.lower() == 'q':\n            break\n        if os.path.isfile(path):\n            files = [path]\n        elif os.path.isdir(path):\n            files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]\n        else:",
+        "detail": "delallmeta",
+        "documentation": {}
+    },
+    {
+        "label": "get_selected_metadata_categories",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def get_selected_metadata_categories():\n    return [category for category, var in metadata_vars.items() if var.get()]\ndef process_image_metadata(file_path, selected_categories):\n    try:\n        from PIL import Image\n        from PIL.ExifTags import TAGS\n        with Image.open(file_path) as img:\n            exif_data = {TAGS[k]: v for k, v in img._getexif().items() if k in TAGS}\n            # Delete selected metadata categories\n            for category in selected_categories:",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "process_image_metadata",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def process_image_metadata(file_path, selected_categories):\n    try:\n        from PIL import Image\n        from PIL.ExifTags import TAGS\n        with Image.open(file_path) as img:\n            exif_data = {TAGS[k]: v for k, v in img._getexif().items() if k in TAGS}\n            # Delete selected metadata categories\n            for category in selected_categories:\n                if category in exif_data:\n                    del exif_data[category]",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "process_audio_metadata",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def process_audio_metadata(file_path, selected_categories):\n    try:\n        from mutagen.mp3 import MP3\n        from mutagen.id3 import ID3\n        audio = MP3(file_path, ID3=ID3)\n        # Delete selected metadata categories\n        for category in selected_categories:\n            if hasattr(audio.tags, category):\n                delattr(audio.tags, category)\n        # Save the audio without the specified metadata",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "process_files",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def process_files(directory, selected_categories, new_metadata):\n    try:\n        for root, _, files in os.walk(directory):\n            for file in files:\n                file_path = os.path.join(root, file)\n                if file_path.lower().endswith(('.jpg', '.jpeg', '.png')):\n                    process_image_metadata(file_path, selected_categories)\n                elif file_path.lower().endswith(('.mp3',)):\n                    process_audio_metadata(file_path, selected_categories)\n        # Add new metadata",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "add_new_metadata",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def add_new_metadata(directory, new_metadata):\n    try:\n        for root, _, files in os.walk(directory):\n            for file in files:\n                file_path = os.path.join(root, file)\n                if file_path.lower().endswith(('.jpg', '.jpeg', '.png')):\n                    from PIL import Image\n                    img = Image.open(file_path)\n                    # Add new metadata\n                    exif_data = img.info['exif']",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "get_new_metadata",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def get_new_metadata():\n    return {\n        'Artist': artist_entry.get(),\n        'Title': title_entry.get(),\n        'Album': album_entry.get(),\n        'Year': year_entry.get(),\n        'TrackNumber': track_number_entry.get()\n    }\ndef process_files_button_click():\n    directory = path_entry.get()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "process_files_button_click",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def process_files_button_click():\n    directory = path_entry.get()\n    if not os.path.isdir(directory):\n        messagebox.showerror(\"Error\", \"Invalid directory path.\")\n        return\n    selected_categories = get_selected_metadata_categories()\n    new_metadata = get_new_metadata()\n    process_files(directory, selected_categories, new_metadata)\n    messagebox.showinfo(\"Success\", \"Files processed successfully!\")\ndef update_ui_for_language(language):",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "update_ui_for_language",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def update_ui_for_language(language):\n    for widget, text in ui_elements.items():\n        if isinstance(widget, tk.Label) or isinstance(widget, tk.Button):\n            widget.config(text=LANGUAGES[language][text])\ndef browse_button_click():\n    path = filedialog.askdirectory()\n    path_entry.delete(0, tk.END)\n    path_entry.insert(tk.END, path)\n# Create the main window\nroot = tk.Tk()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "browse_button_click",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def browse_button_click():\n    path = filedialog.askdirectory()\n    path_entry.delete(0, tk.END)\n    path_entry.insert(tk.END, path)\n# Create the main window\nroot = tk.Tk()\nroot.title(\"Metadata Manager\")\n# Rest of your imports and function definitions remain the same\n# Just remove any DND_FILES references\n# Modified UI creation code",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "browse_button_click",
+        "kind": 2,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "def browse_button_click():\n    path = filedialog.askdirectory()\n    if path:  # Only update if a path was selected\n        path_entry.delete(0, tk.END)\n        path_entry.insert(tk.END, path)\nbrowse_button = tk.Button(root, text=\"Browse...\", command=browse_button_click)\nui_elements[browse_button] = \"browse\"\nbrowse_button.grid(row=0, column=2, padx=10, pady=10)\ndelete_all_checkbox = tk.Checkbutton(root, text=\"Delete All Metadata\")\ndelete_all_checkbox.grid(row=1, column=0, padx=10, pady=10)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGES",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "LANGUAGES = {\n    \"English\": {\n        \"title\": \"Metadata Manager\",\n        \"enter_path\": \"Enter Directory Path:\",\n        \"browse\": \"Browse...\",\n        \"delete_all_metadata\": \"Delete All Metadata\",\n        \"artist_metadata\": \"Select Metadata Categories to Delete:\",\n        \"new_metadata\": \"Add New Metadata:\",\n        \"artist\": \"Artist:\",\n        \"title_metadata\": \"Title:\",",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "METADATA_CATEGORIES",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "METADATA_CATEGORIES = {\n    \"Image\": [\"Orientation\", \"ExifVersion\", \"DateTime\"],\n    \"Audio\": [\"Artist\", \"Title\", \"Album\", \"Year\", \"TrackNumber\"]\n}\ndef get_selected_metadata_categories():\n    return [category for category, var in metadata_vars.items() if var.get()]\ndef process_image_metadata(file_path, selected_categories):\n    try:\n        from PIL import Image\n        from PIL.ExifTags import TAGS",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Metadata Manager\")\n# Rest of your imports and function definitions remain the same\n# Just remove any DND_FILES references\n# Modified UI creation code\nui_elements = {}\npath_label = tk.Label(root, text=\"Enter Directory Path:\")\nui_elements[path_label] = \"enter_path\"\npath_label.grid(row=0, column=0, padx=10, pady=10)\npath_entry = tk.Entry(root, width=50)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements = {}\npath_label = tk.Label(root, text=\"Enter Directory Path:\")\nui_elements[path_label] = \"enter_path\"\npath_label.grid(row=0, column=0, padx=10, pady=10)\npath_entry = tk.Entry(root, width=50)\npath_entry.grid(row=0, column=1, padx=10, pady=10)\n# Modified browse button functionality\ndef browse_button_click():\n    path = filedialog.askdirectory()\n    if path:  # Only update if a path was selected",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "path_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "path_label = tk.Label(root, text=\"Enter Directory Path:\")\nui_elements[path_label] = \"enter_path\"\npath_label.grid(row=0, column=0, padx=10, pady=10)\npath_entry = tk.Entry(root, width=50)\npath_entry.grid(row=0, column=1, padx=10, pady=10)\n# Modified browse button functionality\ndef browse_button_click():\n    path = filedialog.askdirectory()\n    if path:  # Only update if a path was selected\n        path_entry.delete(0, tk.END)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[path_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[path_label] = \"enter_path\"\npath_label.grid(row=0, column=0, padx=10, pady=10)\npath_entry = tk.Entry(root, width=50)\npath_entry.grid(row=0, column=1, padx=10, pady=10)\n# Modified browse button functionality\ndef browse_button_click():\n    path = filedialog.askdirectory()\n    if path:  # Only update if a path was selected\n        path_entry.delete(0, tk.END)\n        path_entry.insert(tk.END, path)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "path_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "path_entry = tk.Entry(root, width=50)\npath_entry.grid(row=0, column=1, padx=10, pady=10)\n# Modified browse button functionality\ndef browse_button_click():\n    path = filedialog.askdirectory()\n    if path:  # Only update if a path was selected\n        path_entry.delete(0, tk.END)\n        path_entry.insert(tk.END, path)\nbrowse_button = tk.Button(root, text=\"Browse...\", command=browse_button_click)\nui_elements[browse_button] = \"browse\"",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "browse_button",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "browse_button = tk.Button(root, text=\"Browse...\", command=browse_button_click)\nui_elements[browse_button] = \"browse\"\nbrowse_button.grid(row=0, column=2, padx=10, pady=10)\ndelete_all_checkbox = tk.Checkbutton(root, text=\"Delete All Metadata\")\ndelete_all_checkbox.grid(row=1, column=0, padx=10, pady=10)\nmetadata_categories_frame = ttk.LabelFrame(root, text=\"Select Metadata Categories to Delete:\")\nmetadata_categories_frame.grid(row=2, column=0, columnspan=3, padx=10, pady=10)\nmetadata_vars = {}\nfor i, category in enumerate(METADATA_CATEGORIES[\"Image\"] + METADATA_CATEGORIES[\"Audio\"], start=1):\n    metadata_var = tk.BooleanVar()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[browse_button]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[browse_button] = \"browse\"\nbrowse_button.grid(row=0, column=2, padx=10, pady=10)\ndelete_all_checkbox = tk.Checkbutton(root, text=\"Delete All Metadata\")\ndelete_all_checkbox.grid(row=1, column=0, padx=10, pady=10)\nmetadata_categories_frame = ttk.LabelFrame(root, text=\"Select Metadata Categories to Delete:\")\nmetadata_categories_frame.grid(row=2, column=0, columnspan=3, padx=10, pady=10)\nmetadata_vars = {}\nfor i, category in enumerate(METADATA_CATEGORIES[\"Image\"] + METADATA_CATEGORIES[\"Audio\"], start=1):\n    metadata_var = tk.BooleanVar()\n    metadata_checkbox = tk.Checkbutton(metadata_categories_frame, text=category, variable=metadata_var)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "delete_all_checkbox",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "delete_all_checkbox = tk.Checkbutton(root, text=\"Delete All Metadata\")\ndelete_all_checkbox.grid(row=1, column=0, padx=10, pady=10)\nmetadata_categories_frame = ttk.LabelFrame(root, text=\"Select Metadata Categories to Delete:\")\nmetadata_categories_frame.grid(row=2, column=0, columnspan=3, padx=10, pady=10)\nmetadata_vars = {}\nfor i, category in enumerate(METADATA_CATEGORIES[\"Image\"] + METADATA_CATEGORIES[\"Audio\"], start=1):\n    metadata_var = tk.BooleanVar()\n    metadata_checkbox = tk.Checkbutton(metadata_categories_frame, text=category, variable=metadata_var)\n    metadata_vars[metadata_checkbox] = metadata_var\n    metadata_checkbox.grid(row=i, column=0, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "metadata_categories_frame",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "metadata_categories_frame = ttk.LabelFrame(root, text=\"Select Metadata Categories to Delete:\")\nmetadata_categories_frame.grid(row=2, column=0, columnspan=3, padx=10, pady=10)\nmetadata_vars = {}\nfor i, category in enumerate(METADATA_CATEGORIES[\"Image\"] + METADATA_CATEGORIES[\"Audio\"], start=1):\n    metadata_var = tk.BooleanVar()\n    metadata_checkbox = tk.Checkbutton(metadata_categories_frame, text=category, variable=metadata_var)\n    metadata_vars[metadata_checkbox] = metadata_var\n    metadata_checkbox.grid(row=i, column=0, padx=10, pady=5)\nnew_metadata_label = tk.Label(root, text=\"Add New Metadata:\")\nui_elements[new_metadata_label] = \"new_metadata\"",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "metadata_vars",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "metadata_vars = {}\nfor i, category in enumerate(METADATA_CATEGORIES[\"Image\"] + METADATA_CATEGORIES[\"Audio\"], start=1):\n    metadata_var = tk.BooleanVar()\n    metadata_checkbox = tk.Checkbutton(metadata_categories_frame, text=category, variable=metadata_var)\n    metadata_vars[metadata_checkbox] = metadata_var\n    metadata_checkbox.grid(row=i, column=0, padx=10, pady=5)\nnew_metadata_label = tk.Label(root, text=\"Add New Metadata:\")\nui_elements[new_metadata_label] = \"new_metadata\"\nnew_metadata_label.grid(row=3, column=0, columnspan=3, padx=10, pady=10)\nartist_label = tk.Label(root, text=\"Artist:\")",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "new_metadata_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "new_metadata_label = tk.Label(root, text=\"Add New Metadata:\")\nui_elements[new_metadata_label] = \"new_metadata\"\nnew_metadata_label.grid(row=3, column=0, columnspan=3, padx=10, pady=10)\nartist_label = tk.Label(root, text=\"Artist:\")\nui_elements[artist_label] = \"artist\"\nartist_label.grid(row=4, column=0, padx=10, pady=5)\nartist_entry = tk.Entry(root)\nartist_entry.grid(row=4, column=1, padx=10, pady=5)\ntitle_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[new_metadata_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[new_metadata_label] = \"new_metadata\"\nnew_metadata_label.grid(row=3, column=0, columnspan=3, padx=10, pady=10)\nartist_label = tk.Label(root, text=\"Artist:\")\nui_elements[artist_label] = \"artist\"\nartist_label.grid(row=4, column=0, padx=10, pady=5)\nartist_entry = tk.Entry(root)\nartist_entry.grid(row=4, column=1, padx=10, pady=5)\ntitle_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "artist_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "artist_label = tk.Label(root, text=\"Artist:\")\nui_elements[artist_label] = \"artist\"\nartist_label.grid(row=4, column=0, padx=10, pady=5)\nartist_entry = tk.Entry(root)\nartist_entry.grid(row=4, column=1, padx=10, pady=5)\ntitle_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)\ntitle_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[artist_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[artist_label] = \"artist\"\nartist_label.grid(row=4, column=0, padx=10, pady=5)\nartist_entry = tk.Entry(root)\nartist_entry.grid(row=4, column=1, padx=10, pady=5)\ntitle_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)\ntitle_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)\nalbum_label = tk.Label(root, text=\"Album:\")",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "artist_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "artist_entry = tk.Entry(root)\nartist_entry.grid(row=4, column=1, padx=10, pady=5)\ntitle_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)\ntitle_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)\nalbum_label = tk.Label(root, text=\"Album:\")\nui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "title_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "title_label = tk.Label(root, text=\"Title:\")\nui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)\ntitle_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)\nalbum_label = tk.Label(root, text=\"Album:\")\nui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)\nalbum_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[title_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[title_label] = \"title_metadata\"\ntitle_label.grid(row=5, column=0, padx=10, pady=5)\ntitle_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)\nalbum_label = tk.Label(root, text=\"Album:\")\nui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)\nalbum_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)\nyear_label = tk.Label(root, text=\"Year:\")",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "title_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "title_entry = tk.Entry(root)\ntitle_entry.grid(row=5, column=1, padx=10, pady=5)\nalbum_label = tk.Label(root, text=\"Album:\")\nui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)\nalbum_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)\nyear_label = tk.Label(root, text=\"Year:\")\nui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "album_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "album_label = tk.Label(root, text=\"Album:\")\nui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)\nalbum_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)\nyear_label = tk.Label(root, text=\"Year:\")\nui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)\nyear_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[album_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[album_label] = \"album\"\nalbum_label.grid(row=6, column=0, padx=10, pady=5)\nalbum_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)\nyear_label = tk.Label(root, text=\"Year:\")\nui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)\nyear_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)\ntrack_number_label = tk.Label(root, text=\"Track Number:\")",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "album_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "album_entry = tk.Entry(root)\nalbum_entry.grid(row=6, column=1, padx=10, pady=5)\nyear_label = tk.Label(root, text=\"Year:\")\nui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)\nyear_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)\ntrack_number_label = tk.Label(root, text=\"Track Number:\")\nui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "year_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "year_label = tk.Label(root, text=\"Year:\")\nui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)\nyear_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)\ntrack_number_label = tk.Label(root, text=\"Track Number:\")\nui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)\ntrack_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[year_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[year_label] = \"year\"\nyear_label.grid(row=7, column=0, padx=10, pady=5)\nyear_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)\ntrack_number_label = tk.Label(root, text=\"Track Number:\")\nui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)\ntrack_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)\nprocess_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "year_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "year_entry = tk.Entry(root)\nyear_entry.grid(row=7, column=1, padx=10, pady=5)\ntrack_number_label = tk.Label(root, text=\"Track Number:\")\nui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)\ntrack_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)\nprocess_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)\nui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "track_number_label",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "track_number_label = tk.Label(root, text=\"Track Number:\")\nui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)\ntrack_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)\nprocess_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)\nui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)\n# Initialize UI for the default language\nupdate_ui_for_language(\"English\")",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[track_number_label]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[track_number_label] = \"track_number\"\ntrack_number_label.grid(row=8, column=0, padx=10, pady=5)\ntrack_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)\nprocess_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)\nui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)\n# Initialize UI for the default language\nupdate_ui_for_language(\"English\")\nroot.mainloop()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "track_number_entry",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "track_number_entry = tk.Entry(root)\ntrack_number_entry.grid(row=8, column=1, padx=10, pady=5)\nprocess_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)\nui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)\n# Initialize UI for the default language\nupdate_ui_for_language(\"English\")\nroot.mainloop()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "process_button",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "process_button = tk.Button(root, text=\"Process Files\", command=process_files_button_click)\nui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)\n# Initialize UI for the default language\nupdate_ui_for_language(\"English\")\nroot.mainloop()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    },
+    {
+        "label": "ui_elements[process_button]",
+        "kind": 5,
+        "importPath": "DelalmetaGUI",
+        "description": "DelalmetaGUI",
+        "peekOfCode": "ui_elements[process_button] = \"process\"\nprocess_button.grid(row=9, column=0, columnspan=3, padx=10, pady=20)\n# Initialize UI for the default language\nupdate_ui_for_language(\"English\")\nroot.mainloop()",
+        "detail": "DelalmetaGUI",
+        "documentation": {}
+    }
+]
